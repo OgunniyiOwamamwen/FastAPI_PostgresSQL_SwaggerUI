@@ -20,7 +20,9 @@ SELECT id, question_id, choice_text, is_correct FROM public.choices;
 
 # CREATE-ENVIRONMENT
 
-python3 -m venv env source env/bin/activate
+python3 -m venv env
+
+source env/bin/activate
 
 # PIP
 
@@ -37,4 +39,14 @@ browser - url = Generate Swagger-ui
 
 # POST
 
-{ "question_text": "What is the best programming language for webAPI?", "choices": [ { "choice_text": "FastAPI", "is_correct": true }, { "choice_text": "dotNET Core", "is_correct": false } ] }
+{ "question_text": "What is the best programming language for webAPI?", "choices":
+
+[
+
+{ "choice_text": "FastAPI", "is_correct": true },
+
+{ "choice_text": "dotNET Core", "is_correct": false }
+
+]
+
+}
